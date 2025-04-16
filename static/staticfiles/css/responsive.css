@@ -1,0 +1,209 @@
+/**/
+
+@media only screen and (max-width: 425px) {
+
+    .footer-section {
+        padding: 0 35px !important;
+    }
+
+    .card {
+        padding: 20px 20px !important;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .footer-section {
+        padding: 0 80px !important;
+    }
+
+    .card {
+        padding: 20px 60px !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .slogan_ul {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /**/
+    .text-contact {
+        height: 100%;
+    }
+
+    .contact-section {
+        margin-top: 3rem;
+    }
+
+    .links_footer h6 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .links_footer p {
+        display: flex;
+        /*justify-content: center;*/
+    }
+
+    .footer a {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        display: flex !important;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero-img img {
+        margin-top: 50px;
+    }
+
+    .hero-section {
+        padding-bottom: 100px;
+    }
+
+    .get-touch-btn {
+        margin: auto !important;
+    }
+
+    .links_footer {
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*.text-contact {*/
+    /*    height: 510px;*/
+    /*}*/
+
+    .links_footer p a {
+        font-size: 17px !important;
+    }
+
+    .links_footer h4 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text-contact {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .text-contact {
+        height: 510px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .text-contact {
+        height: 100%;
+    }
+}
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ home page start ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+
+/* ------------------- sec2 slider  start ------------------------ */
+@media (min-width: 426px) and (max-width: 1024px) {
+    .slide_text {
+        position: absolute;
+        bottom: 0;
+        padding: 20px 50px;
+        text-align: center;
+    }
+
+    .slide_slider_sec2 .slide_img {
+
+        position: absolute;
+        top: 15%;
+        left: 24%;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 425px) {
+    .slide_text {
+        position: absolute;
+        bottom: 0;
+        padding: 20px 50px;
+        text-align: center;
+        height: 150px;
+    }
+
+    .slide_slider_sec2 .slide_img {
+
+        position: absolute;
+        top: 25%;
+        left: 32%;
+    }
+
+}
+
+@media (min-width: 325px) and (max-width: 375px) {
+
+    .slide_slider_sec2 .slide_img {
+
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+
+}
+
+@media (max-width: 325px) {
+    .slide_text {
+        position: absolute;
+        bottom: 0;
+        padding: 20px 50px;
+        text-align: center;
+    }
+
+    .slide_slider_sec2 .slide_img {
+
+        position: absolute;
+        top: 15%;
+        left: 25%;
+    }
+
+
+
+}
+
+/* -------------------- sec2 slider  end ---------------------------- */
+
+
+/* -------------------- sec3 start ---------------------------- */
+@media (max-width: 425px) {
+
+    .why_choose_us_sec_right .why_choose_text1,
+    .why_choose_text2 {
+        margin-top: 30px;
+    }
+}
+
+/* -------------------- sec3 end ---------------------------- */
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ home page end ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ home page start ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ home page end ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */

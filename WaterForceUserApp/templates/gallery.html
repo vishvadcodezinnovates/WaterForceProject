@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <!-- main-content -->
+
+    {% comment %} <!-- ------------------------------ Gallery Section ---------------------------------------- --> {% endcomment %}
+
+    <section class="section Gallery-section">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center">Gallery</h3>
+            </div>
+        </div>
+    </section>
+
+    {% comment %} <!-- ------------------------------ Gallery-Sub-title Section ---------------------------------------- --> {% endcomment %}
+
+    <section class="section gallery-sub-title">
+        <div class="container">
+            <div class="row">
+                <p class="mt-5">Our gallery offers a visual journey through the heart of our work and mission. Here, we showcase the tangible impact we havemade in the field of water treatment, pollutioncontrol, and environmental sustainabilityIt’s a space where you can witness the transformation of environments, the innovation behind our solutions, and the communities that benefit from our efforts..</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section py-5 business-title">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 text-dark text-center text-lg-start">
+                    <h3 class="fw-bold">The system of action that turns customers into fans</h3>
+                    <p>
+                        We have the best experts to elevate your business to the next level. Try us, and you will see the difference!
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 text-center">
+                    <img src="{% static '/staticfiles/img/akshar.png' %}" alt="gallery-img" class="img-fluid rounded-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {% comment %} <!-- ------------------------------ Img-section ---------------------------------------- --> {% endcomment %}
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+
+                {% for gallery_img in gallery_imgs%}
+                <div class="col-lg-4 col-md-6 mt-3 ">
+                    <img src="{{ gallery_img.image.url }}" alt="Picture1" class="rounded-3">
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    {% comment %} <!-- ------------------------------ Img-section ---------------------------------------- --> {% endcomment %}
+
+  
+  <!-- main-content -->
+{% endblock %}

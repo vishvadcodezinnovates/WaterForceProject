@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- main-content -->
+
+
+  
+    {% comment %} <!----------------------------------------- section 1 main heading start -----------------------------------------> {% endcomment %}
+    <section>
+        <div class="container-fluid p-0">
+            <div class="main_heading_contact text-center fw-600">
+                <div class="main_heading_text_contact text-center" data-aos="zoom-in-down">
+                    <h1 class="d-flex align-items-center">Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% comment %} <!----------------------------------------- section 1 main heading end -----------------------------------------> {% endcomment %}
+
+
+
+    {% comment %} <!-- ----------------------------------------- section 2 get in touch & contact form contact page start --------------------------------------- --> {% endcomment %}
+    <section class="section all-section">
+        <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+            <div class="sec2_get_in_touch_contact">
+                <div class="row get_in_touch_text justify-content-center">
+                    <h2 class="text-center mb-5">
+                        Get In Touch</h2>
+                    <h5 class="text-center mb-5">Our team is always ready to provide expert guidance, address your
+                        concerns,
+                        and share insights into
+                        how we can work together to create a more sustainable future.</h5>
+                </div>
+            </div>
+            <div class="sec2_contact_form_contact">
+                <form action="">
+                    <div class="row contact_form_contact d-flex justify-content-center">
+                        <div class="col-md-4 mb-sm-3">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="col-md-12 mt-4">
+                            <textarea name="message" id="" placeholder="Message" width="100%" rows="10"></textarea>
+                        </div>
+                        <div class="col-md-12 mt-4 d-flex justify-content-center">
+                            <input type="submit" value="SEND">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    {% comment %} <!-- ----------------------------------------- section 2 get in touch & contact form contact page end --------------------------------------- --> {% endcomment %}
+
+
+    {% comment %} <!-- ----------------------------------------- section 3 our experties contact page start --------------------------------------- --> {% endcomment %}
+    <section class="section all-section">
+        <div class="container-fluid" style="background-color: #286E8D;">
+            <div class="sec3_our_experties_contact">
+                <div class="row our_experties justify-content-center">
+                    <h2 class="text-center my-5" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">Our Experties</h2>
+                    <div class="our_experties_content mb-5">
+                        <marquee class="marq" bgcolor="" direction="left" loop="infinite" width="100%">
+                            <div class="experties d-flex">
+                                <div class="experty1 px-4">
+                                    <h4>Water Treatment Solutions </h4>
+                                </div>
+                                <div class="experty2 px-4">
+                                    <h4>Environmental Sustainability </h4>
+                                </div>
+                                <div class="experty3 px-4">
+                                    <h4>Community Impact and Development</h4>
+                                </div>
+                                <div class="experty4 px-4">
+                                    <h4>Pollution Control and Mitigation</h4>
+                                </div>
+                                <div class="experty5 px-4">
+                                    <h4>Research and Innovation</h4>
+                                </div>
+                                <div class="experty6 px-4">
+                                    <h4>Consulting and Advisory Services</h4>
+                                </div>
+                            </div>
+                    </div>
+                    </marquee>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    {% comment %} <!-- ----------------------------------------- section 2 experties contact page end --------------------------------------- --> {% endcomment %}
+
+ 
+  <!-- main-content -->
+{% endblock %}

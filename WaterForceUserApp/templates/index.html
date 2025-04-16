@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- main-content -->
+
+  <section>
+    <div class="container-fluid p-0">
+      <div class="main_heading text-center fw-600" data-aos="zoom-in-down">
+        <div class="main_heading_text text_shadow" data-aos="zoom-in-down">
+          <h1 class="d-flex align-items-center">Water Force Treatment Solutions to Minimize Waste,and Encourage Recycling –</h1>
+          <h3>Committed to Excellence and Quality in Every Task.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% comment %}our features slider start{% endcomment %}
+  <section class="section all-section">
+    <div class="container">
+      <div class="section2_homepage" data-aos="flip-left">
+        <div class="sec2_heading">
+          <h4>Tailored Solutions and Services to Meet Your Unique Needs</h4>
+          <h1 class="py-5">We Understand Your Industry.</h1>
+        </div>
+        <div class="slider_sec2">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              {% for ourfeatures in our_features_slider %}
+                <div class="swiper-slide d-flex justify-content-center">
+                  <div class="slide_slider_sec2 d-flex justify-content-center">
+                    <div class="slide_content">
+                      <div class="slide_img">
+                        <img src="{{ ourfeatures.image.url }}" alt="Our features Image" />
+                      </div>
+                      <div class="slide_text">
+                        <h4>{{ ourfeatures.title }}</h4>
+                        <h6>{{ ourfeatures.description }}</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %}our features slider end{% endcomment %}
+
+  {% comment %}why choose us section start{% endcomment %}
+  <section class="section all-section" style="background-color: rgba(209, 221, 230, 0.5);">
+    <div class="container">
+      <div class="sec3_why_choose_us_homepage">
+        <div class="row why_choose_us_sec">
+          <div class="col-md-6 why_choose_us_sec_left">
+            <img src="{% static '/staticfiles/img/why choose us.png' %}" class="mb-5" alt="" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" />
+            <div class="why_choose_us_img_text">
+              <h3>For Multiple Sectors</h3>
+              <h6>Our solutions are designed for multiple sectors, offering tailored products and services that meet the unique needs of each industry.</h6>
+            </div>
+          </div>
+          <div class="col-md-6 why_choose_us_sec_right d-grid">
+            <div class="why_choose_text1">
+              <h3 class="text-center">Our Leading-Edge Innovations</h3>
+              <h6>Through advanced solutions, we empower businesses to overcome challenges and drive success. Our cutting-edge technologies and innovative strategies.</h6>
+            </div>
+            <div class="why_choose_text2">
+              <h3 class="text-center">Our Innovative Products</h3>
+              <h6>Our innovative products are designed to push the boundaries of what's possible, offering cutting-edge solutions that address the needs of today’s dynamic market.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %}why choose us section end{% endcomment %}
+
+  {% comment %}about us section start{% endcomment %}
+  <section class="section all-section">
+    <div class="container">
+      <div class="sec4_aboutus" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="row heading_aboutus_sec">
+          <h2 class="text-center">Our features will drive business growth and success.</h2>
+          <h6>Our features are specifically designed to fuel business growth and success by enhancing productivity, streamlining processes, and delivering measurable results. With cutting-edge technology and user-friendly solutions, we empower businesses to overcome challenges, unlock new opportunities, and stay ahead of the competition.</h6>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center mt-5">
+          <div class="col-sm-4 vision_img">
+            <img src="{% static '/staticfiles/img/Group 10705.png' %}" class="img-fluid" alt="" />
+            <!-- <h2>Vision</h2> -->
+          </div>
+          <div class="col-sm-4">
+            <img src="{% static '/staticfiles/img/aboutus.png' %}" class="img-fluid" alt="" />
+          </div>
+          <div class="col-sm-4 values_img">
+            <img src="{% static '/staticfiles/img/Group 10709.png' %}" class="img-fluid" alt="" />
+            <!-- <h2>Values</h2> -->
+          </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center mt-5">
+          <div class="col-sm-4 vision_img">
+            <img src="{% static '/staticfiles/img/mission.png' %}" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% comment %}about us section end{% endcomment %}
+
+  {% comment %}client sldier section start{% endcomment %}
+
+  <section class="section all-section" style="background-color: rgba(209, 221, 230, 0.5);">
+    <div class="container">
+      <div class="sec4_client_review">
+        <div class="row heading_cilent_review_sec">
+          <h2 class="text-center">Client Experiences</h2>
+          <h6 class="text-center">We take a forward-thinking approach, continuously finding new ways to improve client understanding and elevate brand value.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% comment %}client sldier section end{% endcomment %}
+
+  <!-- main-content -->
+{% endblock %}
