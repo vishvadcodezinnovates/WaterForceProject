@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','dcodezinnovates.com',]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','dcodezinnovates.com','.vercel.app']
 
 
 import os
@@ -43,6 +43,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic'
     'django.contrib.admin',
     'django.contrib.auth', 
     'django.contrib.contenttypes',
@@ -62,6 +63,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middlewar.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
