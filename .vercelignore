@@ -1,0 +1,10 @@
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+node_modules/
+.git/
+*.db
+media/
+uploads/
