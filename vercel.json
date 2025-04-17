@@ -1,0 +1,22 @@
+{
+    "builds": [{
+        "src": "WaterForceProject/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python" }
+    },
+    {
+        "src": "build_files.sh",
+        "use": "@vercel/staticfiles",
+        "config": { "distDir": "staticfiles" }
+    }],
+    "routes": [
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "WaterForceProject/wsgi.py"
+        }
+    ]
+}
