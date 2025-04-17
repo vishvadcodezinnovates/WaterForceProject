@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'colorfield',
     'WaterForceUserApp',
     'rest_framework',
-    'rest_framework_swagger',
     'drf_yasg',
     'drf_spectacular',
     
