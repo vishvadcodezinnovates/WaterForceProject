@@ -34,7 +34,7 @@ load_dotenv()
 
 # Access environment variables
 SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = False
 # SECRET_KEY = os.environ['SECRET_KEY']
 # DEBUG = os.environ['DEBUG']
 
