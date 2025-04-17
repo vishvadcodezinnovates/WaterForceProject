@@ -4,7 +4,6 @@ attrs==25.3.0
 beautifulsoup4==4.13.4
 bravado==10.4.1
 bravado-core==6.1.1
-Bybit==0.2.12
 certifi==2025.1.31
 charset-normalizer==3.4.1
 colorama==0.4.6
