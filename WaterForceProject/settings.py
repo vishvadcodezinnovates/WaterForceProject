@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','dcodezinnovates.com','.vercel.app','Water-Force.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','*','.vercel.app','Water-Force.onrender.com','akshar-water-tech.com','www.akshar-water-tech.com']
 
 
 import os
